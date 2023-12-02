@@ -1,0 +1,42 @@
+.switch {
+border-width: 1px;
+border-style: solid;
+border-radius: 14px;
+}
+
+.unchecked-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7rem;
+    color: rgb(151, 154, 92);
+    padding-right: 2;
+}
+
+.checked-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 0.7rem;
+    color: rgb(6, 25, 85);
+    padding-right: 2;
+}
+
+.unchecked-handle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 20;
+}
+
+.checked-handle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: red;
+    font-size: 18;
+}
