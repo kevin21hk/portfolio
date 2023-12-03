@@ -29,8 +29,32 @@
 
 #dark {
   color-scheme: dark;
-  color: rgb(177, 178, 182);
+  color: rgb(245, 243, 185);
   background-color: rgb(34, 41, 57);
+}
+
+#light .about-me {
+  color-scheme: light;
+  color: rgb(69, 105, 58);
+  background-color: rgb(197, 224, 171)
+}
+
+#dark .about-me {
+  color-scheme: dark;
+  color: rgb(197, 224, 171);
+  background-color: rgb(73, 39, 39);
+}
+
+#light .skills {
+  color-scheme: light;
+  color: rgb(66, 7, 100);
+  background-color: rgb(225, 233, 231);
+}
+
+#dark .skills {
+  color-scheme: dark;
+  color:  rgb(225, 233, 231);
+  background-color: rgb(3, 63, 82);
 }
 
 h1 {
@@ -42,6 +66,7 @@ h1 {
 
 h3 {
   font-family: 'Salma-Pro', sans-serif;
+  text-align: center;
 }
 
 @media (width < 600px) {
