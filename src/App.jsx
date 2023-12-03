@@ -5,6 +5,7 @@ import Introduction from "./components/Introduction/Introduction"
 import Switch from "./components/Switch/Switch"
 import AboutMe from "./components/AboutMe/AboutMe"
 import Skills from "./components/Skills/Skills"
+import Portfolio from "./components/Portfolio/Portfolio"
 import "./App.css"
 
 
@@ -18,9 +19,10 @@ const toggleTheme = () => {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
       <Introduction/>
-       <Switch/>
+      <Switch/>
       <AboutMe/>
       <Skills/>
+      <Portfolio/>
       </div>
      </ThemeContext.Provider >
   )

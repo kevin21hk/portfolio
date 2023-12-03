@@ -23,8 +23,8 @@ const Skills = () => {
     return(
     <>
     <div className="skills">
-        <div className="content">
-            <h1>Skills</h1>
+        <div className="skills-content">
+            <h1>Skills 🛠️</h1>
             <h3> 
                 Proficient in HTML5, CSS3, JavaScript + ES6, React.js, Vue.js, Node.js, Express.js, MongoDB, PostgreSQL, PHP, WordPress, Git and Docker with practical experience creating websites using some of these technologies in free time.
             </h3>

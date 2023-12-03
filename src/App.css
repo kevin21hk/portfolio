@@ -8,8 +8,6 @@
   src: url('./fonts/Salma-Pro.otf') format('opentype');  
 }
 
-
-
 .app {
   height: 100%;
   display: flex;
@@ -58,6 +56,38 @@
   background-color: rgb(3, 63, 82);
 }
 
+#light .portfolio {
+  color-scheme: light;
+  color: rgb(69, 105, 58);
+  background-color: rgb(197, 224, 171)
+}
+
+#dark .portfolio {
+  color-scheme: dark;
+  color: rgb(197, 224, 171);
+  background-color: rgb(73, 39, 39);
+}
+
+a:link {
+  color: rgb(138, 98, 98);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(156, 175, 163);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(153, 153, 153);
+  text-decoration: underline;
+}
+
 h1 {
   font-size: 3.2em;
   font-family: 'Mosk Extra-Bold 800', sans-serif;
@@ -70,20 +100,74 @@ h3 {
   margin: 40px 0 30px 0;
 }
 
-@media (width < 500px) {
+h4 {
+  font-family: 'Salma-Pro', sans-serif;
+  margin: 30px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .content {
-    width: 0%;
-  }
+@media (width < 600px) {
 
-  #root {
+  .app {
     width: 100%;
   }
 
- .skills .icons {
+  .about-me-content {
+    width: 0%;
+  }
+
+  .skills-content {
+    width: 0%;
+  }
+
+  .skills .icons {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
- }
+  }
+
+  .about-me-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .portfolio-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+
+  .portfolio-work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+
+  .modal-project-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+
+  .modal-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+  }
+
+  .modal-project-text {
+    font-size: 0.7rem;
+  }
+  .modal-project-links {
+    font-size: 0.7rem;
+  }
+  .label {
+    font-size: 0.7rem;
+  }
 
   .about-me {
     width: 100%;
