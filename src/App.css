@@ -1,17 +1,20 @@
 @font-face {
-  font-family: 'Mosk Bold 700';
-  src: url('./fonts/Mosk Bold 700.ttf') format('truetype');  
+  font-family: 'Mosk Extra-Bold 800';
+  src: url('./fonts/Mosk Extra-Bold 800.ttf') format('truetype');  
+}
+
+@font-face {
+  font-family: 'Salma-Pro';
+  src: url('./fonts/Salma-Pro.otf') format('opentype');  
 }
 
 .app {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Mosk Bold 700', sans-serif;
-  line-height: 1.0;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,13 +36,29 @@
 h1 {
   font-size: 3.2em;
   line-height: 0.9;
+  font-family: 'Mosk Extra-Bold 800', sans-serif;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 500px) {
+h3 {
+  font-family: 'Salma-Pro', sans-serif;
+}
+
+@media (width < 600px) {
+
+  .content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   h1 {
-    font-size: 9vw;
+    font-size: 2.8rem;
+    width: 350px;
   }
   h3 {
-    font-size: 3vw;
+    font-size: 0.9rem;
+    width: 350px;
   }
 }

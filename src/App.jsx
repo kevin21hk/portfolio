@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import ThemeContext from "./components/Contexts/ThemeContext"
 import Introduction from "./components/Introduction/Introduction"
 import Switch from "./components/Switch/Switch"
+import AboutMe from "./components/AboutMe/AboutMe"
 import "./App.css"
 
 
@@ -17,6 +18,7 @@ const toggleTheme = () => {
       <div className="app" id={theme}>
       <Introduction/>
       <Switch/>
+      <AboutMe/>
       </div>
      </ThemeContext.Provider >
   )
