@@ -16,7 +16,7 @@ const AboutMe = () => {
                 When I'm not at the computer, you'll find me go-karting or enjoying movies.
             </h3>
             <div className="image">
-                <img src={karting}/>
+                <img src={karting} alt="Go-karting"/>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-.content {
+.skills .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .icons img{
-    margin: 10px 20px 30px 0;
-    width: 40px;
+    margin: 10px 20px 10px 0;
+    width: 60px;
 }
 

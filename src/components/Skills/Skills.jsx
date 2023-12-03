@@ -29,27 +29,30 @@ const Skills = () => {
                 Proficient in HTML5, CSS3, JavaScript + ES6, React.js, Vue.js, Node.js, Express.js, MongoDB, PostgreSQL, PHP, WordPress, Git and Docker with practical experience creating websites using some of these technologies in free time.
             </h3>
             <div className="icons">
-                <img src={html5}/>
-                <img src={css3}/>
-                <img src={javascript}/>
-                <img src={react}/>
-                <img src={vue}/>
-                <img src={node}/>
-                <img src={express}/>
-                <img src={mongodb}/>
-                <img src={postgresql}/>
-                <img src={php}/>
-                <img src={wordpress}/>
-                <img src={git}/>
-                <img src={docker}/>
+                <img src={html5} alt="HTML5" />
+                <img src={css3} alt="CSS3" />
+                <img src={javascript} alt="JavaScript" />
+                <img src={react} alt="React.js" />
+                <img src={vue} alt="Vue.js" />
+                <img src={node} alt="Node.js" />
+                <img src={express} alt="Express.js" />
+                <img src={mongodb} alt="MongoDB" />
+                <img src={postgresql} alt="PostgreSQL" />
+                <img src={php} alt="PHP" />
+                <img src={wordpress} alt="WordPress" />
+                <img src={git} alt="Git" />
+                <img src={docker} alt="Docker" />
             </div>
             <h3>
-                Familiar with Java and TypeScript with a solid foundation in their basics and a desire to gain professional experience and interest in further developing skills.
+                Familiar with Java and TypeScript with a solid foundation in their basics and a desire to gain professional experience.
             </h3>
             <div className="icons">
-                <img src={java}/>
-                <img src={typescript}/>
+                <img src={java} alt="Java" />
+                <img src={typescript} alt="TypeScript" />
             </div>
+            <h3>
+            Always eager to learn new stacks and further develop skills.
+            </h3>
            
         </div>
     </div>

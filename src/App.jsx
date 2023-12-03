@@ -18,7 +18,7 @@ const toggleTheme = () => {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="app" id={theme}>
       <Introduction/>
-      <Switch/>
+       <Switch/>
       <AboutMe/>
       <Skills/>
       </div>

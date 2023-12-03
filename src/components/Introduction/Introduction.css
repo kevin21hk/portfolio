@@ -2,6 +2,9 @@
     margin-top: 30vh;
     margin-bottom: 20px;
     font-family: 'Salma-Pro', sans-serif;
-    padding: 0 40px 0 40px;
     letter-spacing: 0.1em;
+}
+
+.introduction .content {
+    text-align: center;
 }
