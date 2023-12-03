@@ -18,3 +18,11 @@
     margin-bottom: 40vh;
 }
 
+.image {
+    margin-top: 30px;
+}
+
+.image img {
+    width: 400px;
+}
+
