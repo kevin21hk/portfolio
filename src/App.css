@@ -8,6 +8,11 @@
   src: url('./fonts/Salma-Pro.otf') format('opentype');  
 }
 
+@font-face {
+  font-family: 'RobotoSlab-ExtraLight';
+  src: url('./fonts/RobotoSlab-ExtraLight.ttf') format('truetype');  
+}
+
 .app {
   height: 100%;
   display: flex;
@@ -159,14 +164,35 @@ h4 {
     grid-column-gap: 0px;
   }
 
+  .modal-icons{
+    margin: 0px 7px;
+  }
+
+  .modal-icons img{
+    padding: 2px 4px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal-project-img {
+  width: 100px;
+  height: 100px;
+  }
+
   .modal-project-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
+
   .modal-project-links {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
+
+  .modal-project-links p{
+    font-size: 0.6rem;
+  }
+
   .label {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .about-me {
