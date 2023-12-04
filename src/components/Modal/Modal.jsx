@@ -3,6 +3,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react"
 import "./Modal.css"
+import portfolio from "../../images/portfolio.jpg"
 import mernNotes from "../../images/mern-notes.png"
 import reactPokemon from "../../images/react-pokemon.png"
 import vueMemorize from "../../images/vue-memorize.png"
@@ -30,7 +31,73 @@ const Modal = ( { toggleModal, selectedProject } ) => {
       }
 
       const getPortfolioData = () => {
+        // Template for new projects
+        //     case "#ProjName#":
+        //       return (
+        //           <>
+        //           <div className="modal-project-container">
+  
+        //               <div className="modal-project-title">
+        //                   <h2>#ProjName#</h2>
+        //               </div>
+        //               <div className="modal-project-layout">
+        //                   <div className="modal-project-text">
+        //                       <p>
+                                //#ProjDescHere#
+        //                       </p>
+        //                   </div>
+        //                   <div className="modal-img-container">
+        //                           <a href="#URL#"><img src={#ProjName#} className="modal-project-img" name="#ProjName#" alt="#Alt#"/></a>
+        //                   </div>
+        //               </div>    
+                      
+        //               <div className="modal-project-links">
+        //               <p><span className="label">Project Name: #ProjName#</span></p>
+        //               <p><span className="label">Project Link: </span><a href="#URL#" target="_blank" rel="noopener noreferrer">#URL#</a></p>
+        //               <p><span className="label">Link To GitHub Repository: </span> <a href="#URL#" target="_blank" rel="noopener noreferrer">#URL#</a></p>
+        //               <p><span className="label">Stacks Used In This Project: </span></p>
+        //                       <div className="modal-icons">
+        //                           <img src={#ProjName#} alt="#Alt#" />
+        //                       </div>
+        //               </div>
+        //           </div>
+        //           </>
+        //       )
         switch (selectedProject) {
+               case "portfolio":
+              return (
+                  <>
+                  <div className="modal-project-container">
+  
+                      <div className="modal-project-title">
+                          <h2>Portfolio</h2>
+                      </div>
+                      <div className="modal-project-layout">
+                          <div className="modal-project-text">
+                              <p>
+                              Welcome to my portfolio page, where I showcase my work as a developer. I have designed this page to be clean and simple, allowing my projects to take center stage. One notable feature of this portfolio page is the light and dark theme switch. I have also implemented modals to present my projects in an interactive way. The portfolio page is fully responsive, ensuring a seamless experience across different devices. Overall, my portfolio page reflects my skills as a developer and my dedication to creating user-friendly interfaces. Feel free to browse through my projects.
+                              </p>
+                          </div>
+                          <div className="modal-img-container">
+                                  <a href="https://kevin21hk.com"><img src={portfolio} className="modal-project-img" name="portfolio" alt="Portfolio"/></a>
+                          </div>
+                      </div>    
+                      
+                      <div className="modal-project-links">
+                      <p><span className="label">Project Name: Portfolio</span></p>
+                      <p><span className="label">Project Link: </span><a href="https://kevin21hk.com" target="_blank" rel="noopener noreferrer">https://kevin21hk.com</a></p>
+                      <p><span className="label">Link To GitHub Repository: </span> <a href="https://github.com/kevin21hk/portfolio" target="_blank" rel="noopener noreferrer">https://github.com/kevin21hk/portfolio</a></p>
+                      <p><span className="label">Stacks Used In This Project: </span></p>
+                              <div className="modal-icons">
+                                <img src={html5} alt="HTML5" />
+                                <img src={css3} alt="CSS3" />
+                                <img src={javascript} alt="JavaScript" />
+                                <img src={react} alt="React.js" />
+                              </div>
+                      </div>
+                  </div>
+                  </>
+              )  
           case "mern-notes":
             return (
                 <>
@@ -46,7 +113,7 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                             </p>
                         </div>
                         <div className="modal-img-container">
-                                <a href="https://k21hk.com"><img src={mernNotes} className="modal-project-img" name="mern-notes" alt="mern-notes"/></a>
+                                <a href="https://k21hk.com"><img src={mernNotes} className="modal-project-img" name="mern-notes" alt="Mern-Notes"/></a>
                         </div>
                     </div>    
                     
@@ -56,13 +123,13 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                     <p><span className="label">Link To GitHub Repository: </span> <a href="https://github.com/kevin21hk/mern-notes" target="_blank" rel="noopener noreferrer">https://github.com/kevin21hk/mern-notes</a></p>
                     <p><span className="label">Stacks Used In This Project: </span></p>
                             <div className="modal-icons">
-                            <img src={html5} alt="HTML5" />
-                            <img src={css3} alt="CSS3" />
-                            <img src={javascript} alt="JavaScript" />
-                            <img src={react} alt="React.js" />
-                            <img src={node} alt="Node.js" />
-                            <img src={express} alt="Express.js" />
-                            <img src={mongodb} alt="MongoDB" />
+                                <img src={html5} alt="HTML5" />
+                                <img src={css3} alt="CSS3" />
+                                <img src={javascript} alt="JavaScript" />
+                                <img src={react} alt="React.js" />
+                                <img src={node} alt="Node.js" />
+                                <img src={express} alt="Express.js" />
+                                <img src={mongodb} alt="MongoDB" />
                             </div>
                     </div>
                 </div>
@@ -83,7 +150,7 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                             </p>
                         </div>
                         <div className="modal-img-container">
-                        <a href="https://k21hk.com/vue-memorize"><img src={vueMemorize} className="modal-project-img" name="vue-memorize" alt="vue-memorize"/></a>
+                        <a href="https://k21hk.com/vue-memorize"><img src={vueMemorize} className="modal-project-img" name="vue-memorize" alt="Vue-Memorize"/></a>
                         </div>
                     </div>    
                     
@@ -93,10 +160,10 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                     <p><span className="label">Link To GitHub Repository: </span> <a href="https://github.com/kevin21hk/vue-memorize" target="_blank" rel="noopener noreferrer">https://github.com/kevin21hk/vue-memorize</a></p>
                     <p><span className="label">Stacks Used In This Project: </span></p>
                             <div className="modal-icons">
-                            <img src={html5} alt="HTML5" />
-                            <img src={css3} alt="CSS3" />
-                            <img src={javascript} alt="JavaScript" />
-                            <img src={vue} alt="Vue" />
+                                <img src={html5} alt="HTML5" />
+                                <img src={css3} alt="CSS3" />
+                                <img src={javascript} alt="JavaScript" />
+                                <img src={vue} alt="Vue" />
                             </div>
                     </div>
                 </div>
@@ -113,11 +180,11 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                     <div className="modal-project-layout">
                         <div className="modal-project-text">
                             <p>
-                            Created a basic responsive Pokémon search app with React.js, integrating an external API and utilizing React states and hooks for search result display. Provides a user-friendly experience for searching favorite Pokémon.
+                            Created a basic responsive Pokémon search app project using React.js that integrates an external API by utilizing React states and hooks, I created a user-friendly experience for searching and displaying favorite Pokémon. The app provides an intuitive interface making it easy for Pokémon enthusiasts to explore and find their desired Pokémon. Additionally, I enhanced the visual appeal by using the same color background of the card for the Pokémon type, creating a cohesive and aesthetically pleasing display.
                             </p>
                         </div>
                         <div className="modal-img-container">
-                        <a href="https://k21hk.com/react-pokemon"><img src={reactPokemon} className="modal-project-img" name="react-pokemon" alt="react-pokemon"/></a>
+                        <a href="https://k21hk.com/react-pokemon"><img src={reactPokemon} className="modal-project-img" name="react-pokemon" alt="React-Pokemon"/></a>
                         </div> 
                     </div>    
                     
@@ -127,10 +194,10 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                     <p><span className="label">Link To GitHub Repository: </span> <a href="https://github.com/kevin21hk/react-pokemon" target="_blank" rel="noopener noreferrer">https://github.com/kevin21hk/react-pokemon</a></p>
                     <p><span className="label">Stacks Used In This Project: </span></p>
                             <div className="modal-icons">
-                            <img src={html5} alt="HTML5" />
-                            <img src={css3} alt="CSS3" />
-                            <img src={javascript} alt="JavaScript" />
-                            <img src={react} alt="React.js" />
+                                <img src={html5} alt="HTML5" />
+                                <img src={css3} alt="CSS3" />
+                                <img src={javascript} alt="JavaScript" />
+                                <img src={react} alt="React.js" />
                             </div>
                     </div>
                 </div>

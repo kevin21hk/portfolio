@@ -2,6 +2,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react"
 import "./Portfolio.css"
+import portfolio from "../../images/portfolio.jpg"
 import mernNotes from "../../images/mern-notes.png"
 import reactPokemon from "../../images/react-pokemon.png"
 import vueMemorize from "../../images/vue-memorize.png"
@@ -27,24 +28,31 @@ const Portfolio = () => {
 
             <div className="portfolio-work">
 
+            <div className="project-item">
+                    <h4>Portfolio:</h4>
+                    <div className="project-container">
+                        <img src={portfolio} name="portfolio" onClick={handleImageClick} alt="Portfolio"/>
+                    </div>
+                </div> 
+
                 <div className="project-item">
                     <h4>Mern-Notes:</h4>
                     <div className="project-container">
-                        <img src={mernNotes} name="mern-notes" onClick={handleImageClick} alt="mern-notes"/>
+                        <img src={mernNotes} name="mern-notes" onClick={handleImageClick} alt="Mern-Notes"/>
                     </div>
                 </div> 
                 
                 <div className="project-item">
                     <h4>Vue-Memorize:</h4>  
                     <div className="project-container">
-                        <img src={vueMemorize} name="vue-memorize" onClick={handleImageClick} alt="vue-memorize"/>
+                        <img src={vueMemorize} name="vue-memorize" onClick={handleImageClick} alt="Vue-Memorize"/>
                     </div>
                 </div>
 
                 <div className="project-item">
                     <h4>React-Pokemon:</h4>  
                     <div className="project-container">
-                        <img src={reactPokemon} name="react-pokemon" onClick={handleImageClick} alt="react-pokemon"/>
+                        <img src={reactPokemon} name="react-pokemon" onClick={handleImageClick} alt="React-Pokemon"/>
                     </div>
                 </div>   
             </div> 
