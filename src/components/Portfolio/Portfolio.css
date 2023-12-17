@@ -1,23 +1,29 @@
+.col {
+    white-space: nowrap;
+}
+
+h4 {
+font-size: 0.9em;
+}
+
 .portfolio {
     line-height: 1.9;
     letter-spacing: 0.1em;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .portfolio-content {
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 0 30vw 0 30vw;
     margin-top: 40vh;
+    margin-bottom: 40vh;
 }
-
-.portfolio-work {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-}
-
 
 .project-container {
     display: flex;
@@ -25,15 +31,13 @@
     border-width: 5px;
     border-radius: 35px;
     border-color: rgb(96, 148, 190);
-    width: 130px;
-    cursor: pointer;
-}
-
-.project-container img {
     width: 100%;
-    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center; 
 }
 
 .portfolio-text {
     margin-bottom: 40vh;
 }
+

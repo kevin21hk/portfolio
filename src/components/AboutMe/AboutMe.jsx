@@ -8,6 +8,7 @@ const AboutMe = () => {
 
     return(
     <>
+    <div id="about" className="href-pos">
     <div className="about-me">
         <div className="about-me-content">
             <h1>About Me 👨🏽‍💻</h1>
@@ -19,6 +20,7 @@ const AboutMe = () => {
                 <img src={karting} alt="Go-karting"/>
             </div>
         </div>
+    </div>
     </div>
     </>
     )

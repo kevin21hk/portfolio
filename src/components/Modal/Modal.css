@@ -2,7 +2,7 @@ body.active-modal {
     overflow-y: hidden;
 }
 
-.modal, .overlay {
+.custom-modal, .overlay {
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -51,6 +51,7 @@ body.active-modal {
     font-family: 'Mosk Extra-Bold 800', sans-serif;
     color: rgb(141, 155, 141);
     text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 .modal-project-layout {
@@ -108,16 +109,15 @@ body.active-modal {
     height: 40px;
 }
 
-.close-modal {
+.close-custom-modal {
     position: absolute;
-    width: 28px;
-    height: 28px;
-    top: 24px;
-    right: 26px;
-    padding: 1px;
-    font-size: 1rem;
-    border-radius: 30px;
+    width: 36px;
+    height: 36px;
+    top: 15px;
+    right: 15px;
+    border-radius: 20px;
     border-width: 2px;
     border-style: solid;
     cursor: pointer;
+ 
 }

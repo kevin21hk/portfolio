@@ -13,8 +13,12 @@
   src: url('./fonts/RobotoSlab-ExtraLight.ttf') format('truetype');  
 }
 
+.href-pos {
+  scroll-behavior: smooth;
+  scroll-margin-top: -200px;
+}
+
 .app {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +101,7 @@ h1 {
   font-size: 3.2em;
   font-family: 'Mosk Extra-Bold 800', sans-serif;
   margin: 0 0 20px 0;
+  white-space: nowrap;
 }
 
 h3 {
@@ -145,24 +150,6 @@ h4 {
     align-items: center;
     flex-direction: column;
   } 
-
-  .portfolio-work {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0px;
-  }
-
-  .modal-project-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0px;
-  }
-
-  .modal-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0px;
-  }
 
   .modal-icons{
     margin: 0px 7px;

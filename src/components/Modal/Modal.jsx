@@ -15,6 +15,7 @@ import node from "../../images/node-icon.png"
 import express from "../../images/express-icon.png"
 import mongodb from "../../images/mongodb-icon.png"
 import vue from "../../images/vue-icon.png"
+import bootstrap from "../../images/bootstrap-icon.png"
 
 const Modal = ( { toggleModal, selectedProject } ) => {
 
@@ -75,7 +76,7 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                       <div className="modal-project-layout">
                           <div className="modal-project-text">
                               <p>
-                              Welcome to my portfolio page, where I showcase my work as a developer. I have designed this page to be clean and simple, allowing my projects to take center stage. One notable feature of this portfolio page is the light and dark theme switch. I have also implemented modals to present my projects in an interactive way. The portfolio page is fully responsive, ensuring a seamless experience across different devices. Overall, my portfolio page reflects my skills as a developer and my dedication to creating user-friendly interfaces. Feel free to browse through my projects.
+                              Welcome to my portfolio page, where I showcase my work as a developer. I have designed this page to be clean and simple, allowing my projects to take center stage. One notable feature of this portfolio page is the light and dark theme switch. I have also implemented modals to present my projects in an interactive way. The portfolio page is fully responsive and using Bootstrap, ensuring a seamless experience across different devices. Overall, my portfolio page reflects my skills as a developer and my dedication to creating user-friendly interfaces. Feel free to browse through my projects.
                               </p>
                           </div>
                           <div className="modal-img-container">
@@ -93,6 +94,7 @@ const Modal = ( { toggleModal, selectedProject } ) => {
                                 <img src={css3} alt="CSS3" />
                                 <img src={javascript} alt="JavaScript" />
                                 <img src={react} alt="React.js" />
+                                <img src={bootstrap} alt="Bootstrap" />
                               </div>
                       </div>
                   </div>
@@ -210,7 +212,7 @@ const Modal = ( { toggleModal, selectedProject } ) => {
 
 return(
     <>
-    <div className="modal">
+    <div className="custom-modal">
         <div 
         className="overlay"
         onClick={handleCloseModal}
@@ -219,10 +221,10 @@ return(
         <div className="modal-content">
             {getPortfolioData()}
             <button 
-            className="close-modal"
+            className="close-custom-modal"
             onClick={handleCloseModal}
             >
-               &times;
+             <div className="x"> &times; </div> 
             </button>
         </div>
     </div>

@@ -22,6 +22,7 @@ const Skills = () => {
 
     return(
     <>
+     <div id="skills" className="href-pos">
     <div className="skills">
         <div className="skills-content">
             <h1>Skills 🛠️</h1>
@@ -55,6 +56,7 @@ const Skills = () => {
             </h3>
            
         </div>
+    </div>
     </div>
     </>
     )
