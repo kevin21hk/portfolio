@@ -33,6 +33,7 @@
   color-scheme: light;
   color: rgb(6, 25, 85);
   background-color: rgb(245, 243, 185);
+  margin: 10px;
 }
 
 #dark {
@@ -44,7 +45,8 @@
 #light .about-me {
   color-scheme: light;
   color: rgb(69, 105, 58);
-  background-color: rgb(197, 224, 171)
+  background-color: rgb(197, 224, 171);
+  flex-direction: column;
 }
 
 #dark .about-me {
@@ -124,12 +126,9 @@ h4 {
     width: 100%;
   }
 
-  .about-me-content {
-    width: 0%;
-  }
-
-  .skills-content {
-    width: 0%;
+  #intro {
+    display: flex;
+    justify-content: center;
   }
 
   .skills .icons {
@@ -180,10 +179,6 @@ h4 {
 
   .label {
     font-size: 0.6rem;
-  }
-
-  .about-me {
-    width: 100%;
   }
 
   .image img {

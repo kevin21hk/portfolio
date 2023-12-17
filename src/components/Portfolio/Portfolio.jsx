@@ -27,27 +27,35 @@ const Portfolio = () => {
             
             <h3>Please take a look at my portfolio:</h3>
 
-                <div className="row d-flex align-items-center">
+                <div className="row g-0">
 
-                        <div className="col col-lg-4 col-md-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-12">
                             <h4>Portfolio:</h4>
-                                <img src={portfolio} className="project-container" name="portfolio" onClick={handleImageClick} alt="Portfolio"/>
+                            <div className="project-container">
+                                <img src={portfolio}  name="portfolio" onClick={handleImageClick} alt="Portfolio"/>
+                            </div>
                         </div> 
 
-                        <div className="col col-lg-4 col-md-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-12">
                             <h4>Mern-Notes:</h4>
-                                <img src={mernNotes} className="project-container" name="mern-notes" onClick={handleImageClick} alt="Mern-Notes"/>
+                            <div className="project-container">
+                                <img src={mernNotes}  name="mern-notes" onClick={handleImageClick} alt="Mern-Notes"/>
+                            </div>
                         </div> 
                         
-                        <div className="col col-lg-4 col-md-6 col-12">
+                        <div className="col-lg-4 col-md-6 col-12">
                             <h4>Vue-Memorize:</h4>  
-                                <img src={vueMemorize} className="project-container" name="vue-memorize" onClick={handleImageClick} alt="Vue-Memorize"/>
+                            <div className="project-container">
+                                <img src={vueMemorize} name="vue-memorize" onClick={handleImageClick} alt="Vue-Memorize"/>
+                            </div>
                         </div>
 
-                        <div className="col col-lg-4 col-md-6 col-12">
-                            <h4>React-Pokemon:</h4>  
-                                <img src={reactPokemon} className="project-container" name="react-pokemon" onClick={handleImageClick} alt="React-Pokemon"/>
-                    </div> 
+                        <div className="col-lg-4 col-md-6 col-12">
+                            <h4>React-Pokemon:</h4>
+                            <div className="project-container">
+                                <img src={reactPokemon} name="react-pokemon" onClick={handleImageClick} alt="React-Pokemon"/>
+                            </div>
+                        </div> 
                 </div>  
          
 
