@@ -27,6 +27,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
 }
 
 #light {
@@ -122,6 +123,10 @@ h4 {
 
 @media (width < 600px) {
 
+  html {
+    width: 100%;
+  }
+  
   .app {
     width: 100%;
   }
@@ -161,8 +166,8 @@ h4 {
   }
 
   .modal-project-img {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
   }
 
   .modal-project-text {
