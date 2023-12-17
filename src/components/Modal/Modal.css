@@ -109,15 +109,11 @@ body.active-modal {
     height: 40px;
 }
 
-.close-custom-modal {
+.btn-close {
     position: absolute;
-    width: 36px;
-    height: 36px;
-    top: 15px;
-    right: 15px;
-    border-radius: 20px;
-    border-width: 2px;
-    border-style: solid;
-    cursor: pointer;
- 
+    width: 26px;
+    height: 26px;
+    top: 14px;
+    right: 14px;
+    border-radius: 16px;
 }

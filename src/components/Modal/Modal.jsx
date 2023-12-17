@@ -221,10 +221,9 @@ return(
         <div className="modal-content">
             {getPortfolioData()}
             <button 
-            className="close-custom-modal"
+            className="btn-close btn-close-white" aria-label="Close"
             onClick={handleCloseModal}
             >
-             <div className="x"> &times; </div> 
             </button>
         </div>
     </div>
