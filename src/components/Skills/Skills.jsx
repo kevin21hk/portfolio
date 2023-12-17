@@ -17,6 +17,8 @@ import git from "../../images/git-icon.png"
 import docker from "../../images/docker-icon.png"
 import java from "../../images/java-icon.png"
 import typescript from "../../images/typescript-icon.png"
+import bootstrap from "../../images/bootstrap-icon.png"
+import csharp from "../../images/csharp-icon.png"
 
 const Skills = () => {
 
@@ -27,7 +29,7 @@ const Skills = () => {
         <div className="skills-content">
             <h1>Skills 🛠️</h1>
             <h3> 
-                Proficient in HTML5, CSS3, JavaScript + ES6, React.js, Vue.js, Node.js, Express.js, MongoDB, PostgreSQL, PHP, WordPress, Git and Docker with practical experience creating websites using some of these technologies in free time.
+                Proficient in HTML5, CSS3, JavaScript + ES6, React.js, Vue.js, Node.js, Express.js, MongoDB, PostgreSQL, PHP, WordPress, Git, Docker, Bootstrap, C#, Java and TypeScript with practical experience creating websites using some of these technologies in free time.
             </h3>
             <div className="icons">
                 <img src={html5} alt="HTML5" />
@@ -43,11 +45,8 @@ const Skills = () => {
                 <img src={wordpress} alt="WordPress" />
                 <img src={git} alt="Git" />
                 <img src={docker} alt="Docker" />
-            </div>
-            <h3>
-                Familiar with Java and TypeScript with a solid foundation in their basics and a desire to gain professional experience.
-            </h3>
-            <div className="icons">
+                <img src={bootstrap} alt="Bootstrap" />          
+                <img src={csharp} alt="C#" />
                 <img src={java} alt="Java" />
                 <img src={typescript} alt="TypeScript" />
             </div>
